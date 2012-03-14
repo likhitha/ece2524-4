@@ -4,5 +4,5 @@ from sys import stderr,stdout
 
 for line in fileinput.input():
 	if fileinput.isfirstline():
-		stderr.write("Reading from %s\n" % fileinput.filename())
+		stderr.write("\033[1;31mReading from %s\033[0m\n" % fileinput.filename())
 	stdout.write("line: %s" % line)
