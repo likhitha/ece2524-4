@@ -3,6 +3,9 @@
 import re
 
 def comment_parse(data):
+    """scan through lines of data.  Generate a comments blob containing all lines starting with '##'.
+        If a line starts with '##' and contains a number in parenthasis, then add the value of that number to a running total."""
+        
     comments=""
     total=0
     for line in data:
