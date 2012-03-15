@@ -14,11 +14,11 @@ all_pdf: ${PDF}
 
 %.fo: %.xml
 	xmllint --valid --noout $^
-	xsltproc ${XSLTOPTIONS} /usr/share/xml/docbook/xsl-stylesheets-1.76.1/fo/docbook.xsl $^ > $@
+	xsltproc ${XSLTOPTIONS} /usr/share/xml/docbook/stylesheet/docbook-xsl/fo/docbook.xsl $^ > $@
 
 %.html: %.xml
 	xmllint --valid --noout $^
-	xsltproc ${XSLTOPTIONS} /usr/share/xml/docbook/xsl-stylesheets-1.76.1/xhtml/docbook.xsl $^ > $@
+	xsltproc ${XSLTOPTIONS} /usr/share/xml/docbook/stylesheet/docbook-xsl/xhtml/docbook.xsl $^ > $@
 
 %.pdf: %.fo
 	fop -fo $^ -pdf $@
