@@ -1,1 +1,6 @@
 *~
+*.d
+*.o
+GPATH
+GTAGS
+GRTAGS
