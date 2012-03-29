@@ -17,3 +17,7 @@ main: ${OBJ}
 
 clean:
 	-rm *.o *.d *~
+
+archive:
+	tar -cvf theprogram.tar ${SRC}
+
