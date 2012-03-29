@@ -1,0 +1,15 @@
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "/afs/cern.ch/sw/XML/XMLBIN/share/www.oasis-open.org/docbook/xmldtd-4.5/docbookx.dtd">
+<article>
+  <articleinfo><title>Week 11 Exercise: Fork and Pull Request</title></articleinfo>
+  <section><title>Assignment</title>
+  <para>
+    <orderedlist>
+      <listitem><para>Fork <ulink url="https://github.com/hazybluedot/ece2524">my ece2524 repository</ulink> to create your own copy on your personal github account.</para>
+      </listitem>
+      <listitem><para>Clone the forked repo from your own github account to your local machine.</para></listitem>
+    <listitem><para>Modify the <filename>week11/Makefile</filename> to add a target named <literal>archive</literal> that when invoked creates a compressed tar archive of the project source files (including the Makefile itself, but excluding any auto-generated files such as binary object files) OR create a <filename>Makefile</filename> in the project base directory that contains targets <literal>'docs', 'week10', 'week11'</literal> that will invoke the <filename>Makefile</filename> in the <filename>doc</filename>, <filename>week10</filename>, or <filename>week11</filename>, respectively.</para></listitem>
+   <listitem><para>Commit your changes, push back to your github user account and then click the "Pull Request" button on github to send a request to me to review your changes.</para></listitem>
+    </orderedlist>
+  </para>
+  </section>
+</article>
