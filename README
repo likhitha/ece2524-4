@@ -1,16 +1,26 @@
+ECE 2524: Intro to UNIX
+
+	Final Project: 	Arcade Hub
+	
+	By: 		Chris Moore
+			Je Hyung Lee
+			Justin Loo
+	
 Project Description:
-Hub interface that can connect collection of programs.
 
-Current Status 4/30/2012
+An arcade hub with GUI that can be used to collect, store, or remove
+collection of scores from various arcade games. You can records fields
+such as the game name, user name, score, and the placement of the score.
+Also, three buttons are available to get scores, commit scores, or 
+remove scores from the collection.
 
-TicTacToe game has been added.
+Compile/Run Instructions:
 
-Current Status 4/15/2012
+NOTE: To compile the program you must have QT installed.
+      Hub.py file must be in the same directory as qtWrapper.
 
-Base functionalities have been added. 
-However, the program needs to be tested and checked for errors.
-
-GUI requires Qt to be installed. Then type 'qmake' and then 'make'
-to run GUI type ./qtWrapper
-
-IMPORTANT: Hub.py must be in the same directory as qtWrapper
+1. Open terminal and change directory.
+2. Type in 'qmake' 
+3. Type in 'make'
+4. When the compilation is complete, type './qtWrapper' to run the GUI 
+   interface.
