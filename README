@@ -33,7 +33,7 @@ Type in './Hub.py' with one of these options '--add', '--del', or '--list'
 -  For '--add', you must enter three parameters: file to save the scores to 
    (without file extension), player name, and score.
 -  For '--del', you must enter two parameters: file to delete the score from
-   and player name.
+   and player name (You can also enter only the filename to delete the file).
 -  For '--list', you must enter two parameters: file to list scores from
    and number of scores you want to view.
 NOTE: When '--list' is used, the scores will be arranged from highest to lowest.
