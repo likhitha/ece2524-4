@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "Adding data to score.scv:"
+echo "p1 12000"
+echo "p2 10000"
+echo "p3 22000"
+echo "p4 1000"
+echo "p5 0"
+./Hub.py --add score p1 12000 
+./Hub.py --add score p2 10000
+./Hub.py --add score p3 22000
+./Hub.py --add score p4 1000
+./Hub.py --add score p5 0
+echo "Adding score that is non-integer:"
+./Hub.py --add score p6 abcd
+echo "Listing scores from score.scv(Should be from highest to lowest):"
+./Hub.py --list score 5
+echo "Deleting scores from score.scv:"
+./Hub.py --del score p1
+./Hub.py --del score p2
+./Hub.py --del score p3
+./Hub.py --del score p4
+./Hub.py --del score p5
+echo "Listing scores from score again.scv:"
+./Hub.py --list score 5
+echo "There should be no listing"

@@ -1,6 +1,11 @@
 Project Description:
 Hub interface that can connect collection of programs.
 
+Current Status 5/1/2012
+
+Added a short script for debugging: DebugScript. This script tests the
+add, del, and list functions of the Hub.py.
+
 Current Status 4/15/2012
 
 Base functionalities have been added. 
